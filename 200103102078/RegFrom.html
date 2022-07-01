@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RegForm</title>
+    <style>
+    
+        .head{
+            font-size: 1.5rem;
+        }
+        div{
+            color: rgb(169, 30, 132);
+        }
+    </style>
+</head>
+<body>
+    <fieldset style="border: 3px solid blue;">
+        <legend class="head">Personal Information</legend>
+        <div>
+            <label for="name">Name: </label>
+            <input type="text" id="name" placeholder="Enter your Name" style="border: 2px solid black;"/>
+        </div>
+        <br/>
+        <div>
+            <label for="enum">Enrollment: </label>
+            <input type="number" id="enum" placeholder="Enter Enrollment-num." style="border: 2px solid black;"/>
+        </div>
+        <br/>
+        <div>Gender:</div>
+        <input type="radio" name="Gender" ><span>Male</span>
+        <input type="radio" name="Gender"><span>Female</span>
+        <br/>
+        <div>Hobbies:
+        </div>
+        <input type="checkbox" name="Hobbies" id="Hobbies"/>Travelling <br/>
+        <input type="checkbox" name="Hobbies" id="Hobbies"/>Reading <br/>
+        <input type="checkbox" name="Hobbies" id="Hobbies"/>Sports <br/>
+        <input type="checkbox" name="Hobbies" id="Hobbies"/>Music <br/>
+        <br/>
+        <div>
+            Address:<br/>
+            <textarea name="address" cols="30" rows="5" placeholder="Write your address.." style="border: 2px solid black;"></textarea>
+        </div>
+    </fieldset>
+    <fieldset style="border: 3px solid orange;">
+        <legend class="head">College Information</legend>
+        <div>
+            <label for="clg_name">College Name: </label>
+            <input type="text" id="clg_name" placeholder="Enter your College name" style="border: 2px solid black;">
+        </div>
+        <br/>
+        <div>
+            <label for="dept">Department: </label>
+            <input type="text" id="dept" placeholder="Enter your Department" style="border: 2px solid black;">
+        </div>
+        <br/>
+        <div>
+            <label for="pass">Paswword: </label>
+            <input type="number" id="pass" placeholder="Enter your Paswword" style="border: 2px solid black;">
+        </div>
+        <br/>
+        <div>
+            Select Your Division:
+            <select name="select class">
+                <option value="a">IT-(A)</option>
+                <option value="b">IT-(B)</option>
+                <option value="c">IT-(C)</option>
+            </select>
+        </div>
+        <br/>
+        <button type="submit" style="border-radius: 10px;">Submit</button>
+        <button type="reset" style="margin-left: 25px; border-radius: 10px;">Reset</button>
+
+    </fieldset>
+</body>
+</html>
